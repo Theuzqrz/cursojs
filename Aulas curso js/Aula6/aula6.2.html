@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intro</title>
+        <style>
+        body{
+                background-color: rgb(28, 56, 56); /* isso é um comentário */
+                font: normal;
+                font-family: Helvetica;
+                color: rgb(255, 0, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello, World!</h1> <!-- isso é um comentário --> 
+        <p>já me livrei da maldição.</p>
+        <script>
+               /* var n1 = window.prompt('digite um número') window.prompt retorna uma string então o js não reconhece
+                var n2 = window.prompt('digite outro número')  o "+" como uma adição, e sim como uma concatenação.                                        
+                var s = n1 + n2
+                window.alert ('a soma é: ' + s) isso é concatenação pq o w.prompt não retorna number e sim string
+               
+                (number + number) para adição
+                (string + string) para concatenação
+
+                se colocar pra rodar, vai dar erro e a soma não vai acontecer, e sim a concatenação.
+                */
+                var n1 = Number(window.prompt('digite um número')) // pode-se usar também o Number.parseFloat(n) (Float são números reais tipo 10.0) em vez de Number.parseInt(n) (Int são números inteiros, tipo 10)
+                var n2 = Number(window.prompt('digite outro número')) // PORÉM, tbm temos o Number(n) que é uma forma atual, ele reconhece se é int ou float
+                var s = n1 + n2
+               // window.alert('A soma dos valores é: ' + s) // se quiser que o s seja considerado uma string é só usar (... + s.toString()) ou melhor: (... + String(s))
+               window.alert(`A soma entre ${n1} e ${n2} é igual a: ${s}`)
+        </script>
+    <body>
+</html>
