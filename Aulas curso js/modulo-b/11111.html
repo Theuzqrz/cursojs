@@ -1,10 +1,7 @@
 
 Js anotações (curso guanabara)
 
-
-Alertas tipos
-
-Dentro do script: 
+Alertas tipos (Dentro do script)
 
     window.alert ('Alo')                                 // mensagem simples
     window.confirm ('Está gostando de javascript?')      // mensagem "ok" ou "cancelar"
@@ -13,92 +10,94 @@ Dentro do script:
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Comentários(dentro de script)
 
-//         comentário linha
-/* 
+    //    comentário linha
+    /* 
           comentário várias linhas
-*/      
+    */      
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-sinal de = significa "recebe"comentário 
+Sinal de = significa "recebe"comentário 
 
 Node.js
 
-ctrl + shit + ' = abrir terminal
+    ctrl + shit + ' = abrir terminal
 
-digitar "node" no terminal para abrir o terminal do node.js
+    digitar "node" no terminal para abrir o terminal do node.js
 
-var n1 = 2
-var n2 = 10
-n1 + n2 = 12
+    var n1 = 2
+    var n2 = 10
+    n1 + n2 = 12
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Identificadores: (n1)
 
-pode começar com letra, $ ou _ (e letras e números. ex: n1)
-não pode começar com números
-pode usar acentos e símbolos
-não pode conter espaços
-não podem ser palavras reservadas
+    pode começar com letra, $ ou _ (e letras e números. ex: n1)
+    não pode começar com números
+    pode usar acentos e símbolos
+    não pode conter espaços
+    não podem ser palavras reservadas
 
 Dicas:
-Maiúsculas e minúsculas Fazem diferença
-tente escolher nomes coerentes
+    *Maiúsculas e minúsculas Fazem diferença
+    *Tente escolher nomes coerentes
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Javascript tipos de dados 
 
-number: 5, 18, -12, 0.5, -15.9, 3.14, 8.0
-{Infinity e NaN}
-string: "google", 'javascript', `maria`
-{ }
-boolean: true, false
-{ }
-Outros: null, object(array) undefined, function
+    number: 5, 18, -12, 0.5, -15.9, 3.14, 8.0
+    {Infinity e NaN}
+    string: "google", 'javascript', `maria`
+    { }
+    boolean: true, false
+    { }
+
+    Outros: null, object(array) undefined, function
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-nodejs typeof
+Nodejs typeof
 
->typeof [ ]
-'object'
+    >typeof [ ]
+    'object'
 
->typeof "google"
-'string'
+    >typeof "google"
+    'string'
 
->typeof 3
-'number'
+    >typeof 3
+    'number'
 
->typeof funtion(){}
-'function'
+    >typeof funtion(){}
+    'function'
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-Number.parseFloat(n) força uma string ser numero real
-Number.parseInt(n) força uma string ser numero inteiro
-Number(n) reconhece o tipo de numero colocado automaticamente
+    Number.parseFloat(n) força uma string ser numero real
+    Number.parseInt(n) força uma string ser numero inteiro
+    Number(n) reconhece o tipo de numero colocado automaticamente
 
-ex: 
+    ex: 
 
-var n1 = Number(window.prompt('digite um número'))
-var n2 = Number(window.prompt('digite outro número')) 
+    var n1 = Number(window.prompt('digite um número'))
+    var n2 = Number(window.prompt('digite outro número')) 
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Formatando String:
 
-Template string: melhor pra fazer a concatenação
+    Template string: melhor pra fazer a concatenação
 
-var idioma = 'portugues'
+    var idioma = 'portugues'
 
-'eu estou aprendendo' + idioma // usa concatenação
-`eu estou aprendendo ${idioma}` // usa template string
+    'eu estou aprendendo' + idioma // usa concatenação
+    `eu estou aprendendo ${idioma}` // usa template string
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Conversão de letras
 
-var x = 'nOMe'
-document.write(`Olá, ${x}!`) >> Olá, nOMe! 
-document.write(`Olá, ${x.toUpperCase}()!`) >> olá, NOME!
-document.write(`Olá, ${x.toLowerCase}()!`) >> olá, nome!
+     var x = 'nOMe'
+     document.write(`Olá, ${x}!`) >> Olá, nOMe! 
+     document.write(`Olá, ${x.toUpperCase}()!`) >> olá, NOME!
+     document.write(`Olá, ${x.toLowerCase}()!`) >> olá, nome!
 
 
-var x = window.prompt('Digite uma frase.')
-document.write(`A frase possui ${x.length} letras.`)
-document.write(`${x}`)
+     var x = window.prompt('Digite uma frase.')
+     document.write(`A frase possui ${x.length} letras.`)
+     document.write(`${x}`)
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 formatar números no node:
+    
     > var n1 = 1545.5 
     >n1
     1545.5
@@ -108,154 +107,166 @@ formatar números no node:
     (e se eu quiser usar vírgula em lugar de ponto?)
     >n1.tofixed(2).replace('.', ',')
     1545,50
+
+IMPORTANTE:
+
+    >n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+    R$ 1,545.50
+    >n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+    US$ 1,545.50
+    >n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+    € 1,545.50
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Operadores(pt 1): Aritiméticos, Atribuição
 Aritiméticos: 
-5 - 2 = 3
-5 + 2 =7
-5 / 2 = 2.5
-5 * 2 = 10
-5 ** 2 = 25
-5 % 2 = 1
 
-5+3/2 = 6.5 (divisão primeiro)
+    5 - 2 = 3
+    5 + 2 =7
+    5 / 2 = 2.5
+    5 * 2 = 10
+    5 ** 2 = 25
+    5 % 2 = 1
+
+    5+3/2 = 6.5 (divisão primeiro)
 
 Ordem de precedência: Importante
 
-()       >      **        >        *, /, %        >        +, -
+    ()       >      **        >        *, /, %        >        +, -
 
-var a = 5 + 3                    > 8
-var b = a % 5                    > 3
-var c = 5 * ((b ** 2))           > 45
-var d = 10 - ((a / 2))           > 6
-var e = ((6 * 2)) / d            > 2
-var f = ((b % e)) + ((4/e))      > 3
+    var a = 5 + 3                    > 8
+    var b = a % 5                    > 3
+    var c = 5 * ((b ** 2))           > 45
+    var d = 10 - ((a / 2))           > 6
+    var e = ((6 * 2)) / d            > 2
+    var f = ((b % e)) + ((4/e))      > 3
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Autoatribuição:
 
-var n = 3
-n = n + 4
-n = n - 5
-n = n * 4
-n = n / 2
-n = n ** 2
-n = n % 5
+    var n = 3
+    n = n + 4
+    n = n - 5
+    n = n * 4
+    n = n / 2
+    n = n ** 2
+    n = n % 5
 
-forma de simplificar:
+Forma de simplificar:
 
-se N receber ele mesmo(N) mais 4:
-N = N + 4           >          N += 4
+    se N receber ele mesmo(N) mais 4:
+    N = N + 4           >          N += 4
 
-se receber outra variável :
-(não pode simplificar)
+    se receber outra variável :
+    (não pode simplificar)
 
-N + M(outra variável) + 4
+    N + M(outra variável) + 4
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-> var num = 8
-undefined
-> num
-8
-> num += 2
-10
-> num
-10
+Incremento:
+    > var num = 8
+    undefined
+    > num
+    8
+    > num += 2
+    10
+    > num
+    10
 
-a variável muda e se atualiza.
+    a variável muda e se atualiza.
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-operadores de incremento:
+Operadores de incremento:
 
-var x = 5
-x = x + 1    ou    x += 1     ou   x++   >       6
-x = x - 1    ou    x -= 1     ou   x--   >       5
+    var x = 5
+    x = x + 1    ou    x += 1     ou   x++   >       6
+    x = x - 1    ou    x -= 1     ou   x--   >       5
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Operadores(pt 2): Relacionais, Lógicos, Ternário
 Relacionais: (RESULTADO VALOR BOOLEANO)
 
-5 > 2       > true     (5 maior que 2?)
-7 < 4       > false    (7 menor que 4?)
-8 >= 8      > true     (8 é maior ou igual a 8?)
-9 <= 7      > false    (9 é menor ou igual a 4?)
-5 == 5      > true     (5 igual a 5?)
-4 != 4      > false    (4 diferente de 4?)
+    5 > 2       > true     (5 maior que 2?)
+    7 < 4       > false    (7 menor que 4?)
+    8 >= 8      > true     (8 é maior ou igual a 8?)
+    9 <= 7      > false    (9 é menor ou igual a 4?)
+    5 == 5      > true     (5 igual a 5?)
+    4 != 4      > false    (4 diferente de 4?)
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 ATENÇÃO!!! IDENTIDADE.
 
-5 == 5 > true
-5 == '5' > true
+    5 == 5 > true
+    5 == '5' > true
 
-5 === '5'   > FALSE    (são indênticos?)
-5 === 5     > TRUE     (são idênticos?)
+    5 === '5'   > FALSE    (são indênticos?)
+    5 === 5     > TRUE     (são idênticos?)
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Lógicos:
 
-ORDEM DE EXECUÇÃO :  primeiramente NÃO, segundamente E e terceiramente OU
+    ORDEM DE EXECUÇÃO :  primeiramente NÃO, segundamente E e terceiramente OU
 
-sempre que aparecer:   !   >  NEGAÇÃO.   (NÃO)
-sempre que aparecer:  &&   >  CONJUNÇÃO. (E)
-sempre que aparecer:  ||   >  DISJUNÇÃO. (OU)
+    sempre que aparecer:   !   >  NEGAÇÃO.   (NÃO)
+    sempre que aparecer:  &&   >  CONJUNÇÃO. (E)
+    sempre que aparecer:  ||   >  DISJUNÇÃO. (OU)
 -----
-! true        >   false
-! false       >   true
+    ! true        >   false
+    ! false       >   true
 -----
-true && true     >   true 
-true && false    >   false
-false && true    >   false
-false && false   >   false
+    true && true     >   true 
+    true && false    >   false
+    false && true    >   false
+    false && false   >   false
 -----
-true || true     >   true 
-true || false    >   true 
-false ||true     >   true 
-false || false   >   false
+    true || true     >   true 
+    true || false    >   true 
+    false ||true     >   true 
+    false || false   >   false
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Importante:
 
-var a = 5
-var b = 8
+    var a = 5
+    var b = 8
 
-a > b && b % 2 == 0        // b % 2 == 0       >      true        1- Operador Aritiméticos
-a > b && TRUE              // a > b            >      falso       2- Operadores Relacionais
-FALSE && TRUE              // FALSE && TRUE    >      falso       3- Operadores Lógicos
+    a > b && b % 2 == 0        // b % 2 == 0       >      true        1- Operador Aritiméticos
+    a > b && TRUE              // a > b            >      falso       2- Operadores Relacionais
+    FALSE && TRUE              // FALSE && TRUE    >      falso       3- Operadores Lógicos
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Revisão ordem de precedência:
 
-1. Operadores Aritiméticos      (), **, /, ...
-2. Operadores Relacionais       >, <, >=, ... (LEMBRANDO QUE: entre os Relacionais, não tem ordem, quem vier primeiro vai ser feito primeiro)
-3. Operadores Lógicos           !
-                                &&
-                                ||    
+    1. Operadores Aritiméticos      (), **, /, ...
+    2. Operadores Relacionais       >, <, >=, ... (LEMBRANDO QUE: entre os Relacionais, não tem ordem, quem vier primeiro vai ser feito primeiro)
+    3. Operadores Lógicos           !
+                                    &&
+                                    ||    
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Operadores Ternário:
-é "?" e ":" dentro de uma mesma expressão
 
-TESTE ? TRUE : FALSE
+    é "?" e ":" dentro de uma mesma expressão
 
--teste lógico qualquer- ? -vai acontecer se o teste for verdadeiro- : -vai acontecer se o teste for falso-
--a média é >= 7.0- ? -aprovado- : -reprovado-
+    TESTE ? TRUE : FALSE
 
-nodejs
+    -teste lógico qualquer- ? -vai acontecer se o teste for verdadeiro- : -vai acontecer se o teste for falso-
+    -a média é >= 7.0- ? -aprovado- : -reprovado-
 
-> var média = 5.5
-undefined
-> média > 7?'aprovado':'reprovado'
-'reprovado'
-> média += 3
-8.5
-> média > 7?'aprovado':'reprovado'
-'aprovado'
+Nodejs
 
-> var res = x % 2 == 0 ? 5 : 9 ((se x % 2 restar 0, ou seja, for número par, a variável res vai ser 5, caso não seja, vai ser 9))
-undefined
-> x 
-8
-> res
-5
+    > var média = 5.5
+    undefined
+    > média > 7?'aprovado':'reprovado'
+    'reprovado'
+    > média += 3
+    8.5
+    > média > 7?'aprovado':'reprovado'
+    'aprovado'
 
-> var idade = 19
-undefined
-> var r = idade >= 18?'MAIOR' : 'MENOR'
-undefined
-> r
-'MAIOR' 
+    > var res = x % 2 == 0 ? 5 : 9 ((se x % 2 restar 0, ou seja, for número par, a variável res vai ser 5, caso não seja, vai ser 9))
+    undefined
+    > x 
+    8
+    > res
+    5
+
+    > var idade = 19
+    undefined
+    > var r = idade >= 18?'MAIOR' : 'MENOR'
+    undefined
+    > r
+    'MAIOR' 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
