@@ -1,4 +1,4 @@
 # cursojs
- curso javascript 
-
-Teste
+=============================================================================
+Anotações, exercícios, testes e aulas do curso de javascript(Curso em vídeo).
+=============================================================================
