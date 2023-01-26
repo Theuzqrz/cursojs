@@ -41,11 +41,12 @@ Dicas:
 Javascript tipos de dados 
 
     number: 5, 18, -12, 0.5, -15.9, 3.14, 8.0
-    {Infinity e NaN}
+    {Infinity e NaN(not an number)}
+
     string: "google", 'javascript', `maria`
-    { }
+    
     boolean: true, false
-    { }
+
 
     Outros: null, object(array) undefined, function
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -78,15 +79,15 @@ Formatando String:
 
     var idioma = 'portugues'
 
-    'eu estou aprendendo' + idioma // usa concatenação
-    `eu estou aprendendo ${idioma}` // usa template string
+    'eu estou aprendendo' + idioma            // usa concatenação
+    `eu estou aprendendo ${idioma}`          // usa template string
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Conversão de letras
 
     var x = 'nOMe'
-    document.write(`Olá, ${x}!`) >> Olá, nOMe! 
-    document.write(`Olá, ${x.toUpperCase}()!`) >> olá, NOME!
-    document.write(`Olá, ${x.toLowerCase}()!`) >> olá, nome!
+    document.write(`Olá, ${x}!`)                     >> Olá, nOMe! 
+    document.write(`Olá, ${x.toUpperCase}()!`)       >> olá, NOME!
+    document.write(`Olá, ${x.toLowerCase}()!`)       >> olá, nome!
 
 
     var x = window.prompt('Digite uma frase.')
@@ -117,12 +118,12 @@ IMPORTANTE:
 Operadores(pt 1): Aritiméticos, Atribuição
 Aritiméticos: 
 
-    5 - 2 = 3
-    5 + 2 =7
-    5 / 2 = 2.5
-    5 * 2 = 10
-    5 ** 2 = 25
-    5 % 2 = 1
+    5 -  2   =   3
+    5 +  2   =   7
+    5 /  2   =   2.5
+    5 *  2   =   10
+    5 ** 2   =   25          // 5 elevado a 2
+    5 %  2   =   1          // divisão resta 1
 
     5+3/2 = 6.5 (divisão primeiro)
 
@@ -139,23 +140,23 @@ Ordem de precedência: Importante
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Autoatribuição:
 
-    var n = 3
-    n = n + 4
-    n = n - 5
-    n = n * 4
-    n = n / 2
+    var n =  3
+    n = n +  4
+    n = n -  5
+    n = n *  4
+    n = n /  2
     n = n ** 2
-    n = n % 5
+    n = n %  5
 
 Forma de simplificar:
 
     se N receber ele mesmo(N) mais 4:
-    N = N + 4           >          N += 4
+    N = N + 4             >          N += 4 ou N++ = 4
 
     se receber outra variável :
     (não pode simplificar)
 
-    N + M(outra variável) + 4
+    N + M(outra variável) + 4    // não simplifica
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Incremento:
     > var num = 8
@@ -190,12 +191,12 @@ ATENÇÃO!!! IDENTIDADE.
     5 == 5 > true
     5 == '5' > true
 
-    5 === '5'   > FALSE    (são indênticos?)
-    5 === 5     > TRUE     (são idênticos?)
+    5 === '5'   > FALSE    (são indênticos? sim)
+    5 === 5     > TRUE     (são idênticos? sim)
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Lógicos:
 
-    ORDEM DE EXECUÇÃO :  primeiramente NÃO, segundamente E e terceiramente OU
+    ORDEM DE EXECUÇÃO :  primeiramente 'NÃO', segundamente 'E' e terceiramente 'OU'
 
     sempre que aparecer:   !   >  NEGAÇÃO.   (NÃO)
     sempre que aparecer:  &&   >  CONJUNÇÃO. (E)
@@ -204,32 +205,34 @@ Lógicos:
     ! true        >   false
     ! false       >   true
 -----
-    true && true     >   true 
-    true && false    >   false
-    false && true    >   false
-    false && false   >   false
+    true  && true     >   true 
+    true  && false    >   false
+    false && true     >   false
+    false && false    >   false
 -----
-    true || true     >   true 
-    true || false    >   true 
-    false ||true     >   true 
-    false || false   >   false
+    true  || true     >   true 
+    true  || false    >   true 
+    false || true     >   true 
+    false || false    >   false
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Importante:
 
     var a = 5
     var b = 8
 
-    a > b && b % 2 == 0        // b % 2 == 0       >      true        1- Operador Aritiméticos
-    a > b && TRUE              // a > b            >      falso       2- Operadores Relacionais
-    FALSE && TRUE              // FALSE && TRUE    >      falso       3- Operadores Lógicos
+    a > b && b % 2 == 0        // b % 2 == 0       >    é  true        1- Resolve os operadores Aritiméticos
+    a > b && TRUE              // a > b            >    é falso        2- Resolve os operadores Relacionais
+    FALSE && TRUE              // FALSE && TRUE    >    é falso        3- Resolve os operadores Lógicos
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-Revisão ordem de precedência:
+Revisão ordem de precedência: (descendo = v) 
 
-    1. Operadores Aritiméticos      (), **, /, ...
-    2. Operadores Relacionais       >, <, >=, ... (LEMBRANDO QUE: entre os Relacionais, não tem ordem, quem vier primeiro vai ser feito primeiro)
-    3. Operadores Lógicos           !
-                                    &&
-                                    ||    
+    Se tiver todos os operadores numa mesma expressão, resolve primeiramente:
+
+  v  1. Operadores Aritiméticos      (), **, /, ...
+  v  2. Operadores Relacionais       >, <, >=, ... (LEMBRANDO QUE: entre os Relacionais, quem vier primeiro vai ser feito primeiro)
+  v  3. Operadores Lógicos           !
+  v                                  &&
+  v                                  ||    
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Operadores Ternário:
 
