@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos DOM</title>
+    <style>
+        body{
+           background: linear-gradient(0.25turn, #353535, #010200, #353535);
+           color: rgb(255, 0, 0);
+           font: normal 10pt Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM = Document Object Model</h1>
+    <p>teste teste teste teste</p>
+    <p>Aprendendo a usar o <strong>dom</strong ></p>
+    <div id="msg">clique em mim</div>
+    <div name = "mensagem"> ALOALOALOA </div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1] // o primeiro <p> é 0. o segundo <p> é 1 e assim por diante
+       // window.document.write(p1.innerText)
+        // p1.style.color = 'blue' ;
+        
+       // document.write(p1.innerHTML)
+       // document.write(p1.innertext) // não fica em negrito pq pega o texto sem as "filhas"
+    
+        /* var d = window.document.getElementById('msg') // se quiser pode começar por document, em vez de window.document
+        d.style.background = 'green' 
+        d.innerText = 'estou aguardando...'
+        */
+        var d = document.getElementsByName('mensagem')[0]
+        d.innerText = 'olá!'       
+
+        // depende da qual você preferir.
+
+        //Forma nova, por seletor:  
+
+        var d = window.document.querySelector('div#msg')  // se for id da div, é representada por #. se for class da div, é representado por .
+        d.style.color = 'blue'
+
+        
+    </script>
+</body>
+</html>
