@@ -4,55 +4,69 @@ O que é DOM? (Aula 9)
     conjunto de objetos de objetos dentro do nav que vai dar acesso 
     aos componentes internos do website.
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Árvore DOM: Árvore hierárquica de ELEMENTOS.
 
+
             Window
-               .
-location / document / history
-    .          .          .
-    .          .          .
+              ....
+location, document,  history,   etc
+    .          .         .       .
+               .          
               html
-               .
-           .       . 
-        head   /   body
-       .   .            .
-    meta / title / etc...   .
-                               . 
-                        h1 / p / div/ etc...
+                ..
+           .          . 
+        head,          body
+   .     .    .            .... 
+meta, title, etc...           ....
+                          .  .   .    .
+                        h1,  p,  div,  etc...
+                     . .     ..       .     .
+                    p, etc     ..
+                             .   .
+                         strong, etc
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-5 MÉTODOS DE ACESSO.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+5 MÉTODOS DE ACESSO:                   { Lembrando que os métodos ficam dentro de uma função   } 
+                                       { e se o "Element" acabar com "Elements" com s, colocar }
+                                       { dentro do [] o valor desejado. 0 é o primeiro.        }
 
-    por marca(tag)
-    por ID
-    por Nome 
-    por Classe
-    por Seletor
-
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 1. selecionar método por marca (TagName)
     
-    getElementsByTagName()[]
--
+    getElementsByTagName()[]                
+
+>   ex: var x = window.document.getElementsByTagName('x')[0]  
+
+-------------------------------------------------------------------------------------------------
 2. selecionar método por ID (ID)
 
-    getElementByID()
--
+    getElementByID()                
+
+    ex: var x = window.document.getElementByID('x')
+-------------------------------------------------------------------------------------------------
 3. selecionar método por Nome (Name)
 
-    getElementsByName()[]
--
+    getElementsByName()[]  
+
+>   ex: var x = window.document.getElementsByName(x)[0]
+-------------------------------------------------------------------------------------------------
 4. selecionar método por Classe (ClassName)
 
-    getElementsByClassName()[]
--
+    getElementsByClassName()[]              
+
+>   ex: var x = window.document.getElementsByClassName(x)[0]
+-------------------------------------------------------------------------------------------------
 5. selecionar método por Seletor (querySelector) > método mais recente
 
-    querySelector()
-    querySelectorAll()
+   querySelector()   
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>  ex:
+
+   querySelectorAll()
+
+
+>  ex:
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Eventos DOM: (Aula 10)
 
     Primeiramente, funções são um conjunto de linhas/códigos que vão ser executadas caso o evento ocorra
@@ -65,9 +79,9 @@ Eventos DOM: (Aula 10)
 
     
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Usando o inspecionar pode-se descobrir os erros de digitação dentro do Js 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Revisão coisas aprendidas de forma detalhada:
         
 1.
@@ -76,4 +90,4 @@ Revisão coisas aprendidas de forma detalhada:
 
 3.
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
