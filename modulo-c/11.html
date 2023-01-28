@@ -33,39 +33,64 @@ meta, title, etc...           ....
 
 1. selecionar método por marca (TagName)
     
-    getElementsByTagName()[]                
+    document.getElementsByTagName()[]                
 
->   ex: var x = window.document.getElementsByTagName('x')[0]  
+>   ex: (<)div name = "mensagem"(>) ALO (</)div(>)
+        (<)div name = "mensagem"(>) ALO ALO (</)div(>)
 
+        var x = document.getElementsByTagName('mensagem')[0] << 0
+        x.innerText = 'olá!'    
+
+        > resultado: "ALO" se tornará "olá!"
+
+        var x = document.getElementsByTagName('mensagem')[1] << 1
+        x.innerText = 'olá!'             
+
+    > resultado: "ALO ALO" se tornará "olá!"
 -------------------------------------------------------------------------------------------------
 2. selecionar método por ID (ID)
 
-    getElementByID()                
+    document.getElementByID()                
 
-    ex: var x = window.document.getElementByID('x')
+>   ex: (<)div id= "mensagem"(>) ALO (</)div(>)
+    
+        var x = document.getElementByID('mensagem')
+        x.innerText = 'olá!'
+
+    > resultado: "ALO" se tornará "olá!"
 -------------------------------------------------------------------------------------------------
 3. selecionar método por Nome (Name)
 
-    getElementsByName()[]  
+    document.getElementsByName()[]  
 
->   ex: var x = window.document.getElementsByName(x)[0]
+>   ex: (<)div name = "mensagem"(>) ALO (</)div(>)
+
+        var x = document.getElementsByName('mensagem')[0]
+        x.innerText = 'olá!'
+        
+    > resultado: "ALO" se tornará "olá!"
 -------------------------------------------------------------------------------------------------
 4. selecionar método por Classe (ClassName)
 
-    getElementsByClassName()[]              
+    document.getElementsByClassName()[]              
 
->   ex: var x = window.document.getElementsByClassName(x)[0]
+>   ex: (<)div class = "mensagem"(>) ALO (</)div(>)
+        
+        var x = document.getElementsByClassName('mensagem')[0]
+        x.innerText = 'olá!'
+
+    > resultado: "ALO" se tornará "olá!"
 -------------------------------------------------------------------------------------------------
-5. selecionar método por Seletor (querySelector) > método mais recente
+5. selecionar método por Seletor (querySelector) > método mais recente e recomendável
 
-   querySelector()   
+    document.querySelector()   
 
->  ex:
-
-   querySelectorAll()
-
-
->  ex:
+>  ex: (<)div class = "mensagem"(>) ALO (</)div(>)
+        
+        var x = document.querySelector('div.mensagem') - se div = id, seria ('div#mensagem')
+        x.innerText = 'olá'
+    
+    > resultado: "ALO" se tornará "olá!"
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Eventos DOM: (Aula 10)
 
@@ -75,19 +100,37 @@ Eventos DOM: (Aula 10)
     >
     >}
 
-    exemplos de eventos com o mouse:
+    exemplos de alguns eventos com o mouse:
+
+    onmouseenter, onmouseout, onmouseup, onmousedown, onclick,
 
     
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 Usando o inspecionar pode-se descobrir os erros de digitação dentro do Js 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-Revisão coisas aprendidas de forma detalhada:
+Revisão:
         
-1.
+1. document.write(x.innerHTML) e ...(x.innerText) 
+são diferentes. html pega as tags, text pega apenas o texto
 
-2.
+2. Após chamar um evento, adicionar um método. ex:
+        div id="area" onclick="clicar()"
 
-3.
+        function clicar{
+            var x = document.getElementByID('area')
+            x.innerText = 'Clicou!' 
+        }
+
+3. Listenners são usados assim:
+
+    div> class = "roupa" /div>
+
+    var x = document.querySelector('div.roupa')
+
+    x.addEventListener('click', clicar)
+    x.addEventListener('mouseenter', entrar)
+    x.addEventListener('mouseout', sair)
+
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
