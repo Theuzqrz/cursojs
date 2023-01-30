@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+
+    Qual país você nasceu?
+    <input type="text" name="txtnac" id="txtnac" />
+    <input type="button" value="verificar" onclick="clicar()" />
+    <div id="res"></div>
+
+    <script>
+    function clicar(){
+        var txtn = document.querySelector("input#txtnac");
+        var res = document.querySelector("div#res");
+        var nac = txtn.value
+
+        res.innerHTML = `<p>Você nasceu no/na ${nac}.</p>`
+
+        if (nac == "Brasil" || nac == "brasil") {
+            res.innerHTML += `<p><b>Você é brasileiro!</b></p>`
+        } else {
+            res.innerHTML += `<p>Você é <b>estrangeiro!</b></p>`
+        }
+    }
+    </script>
+</body>
+</html>
