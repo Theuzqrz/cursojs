@@ -11,7 +11,6 @@ body{
 
 header{
     font: normal 20pt Helvetica;
-    border: solid 1px red;
     text-align: center;
 }
 
@@ -19,6 +18,7 @@ div{
     text-align: center;
     padding: 11px;
 }
+
 section{
     background: white; 
     color: black;
@@ -41,7 +41,6 @@ section{
 footer{
     padding: 10px;
     font: normal 10pt Helvetica;
-    border: solid 2px green;
     text-align: center;
     font-style: italic;
 }
