@@ -23,6 +23,17 @@ Estrutura condicional composta: IF/ELSE
 
     Se condição1 for TRUE, execute o bloco TRUE (Bloco A).
     Senão for TRUE, execute o bloco FALSE (Bloco B).
+    
+    var idade = 22
+    console.log(`Você tem ${idade} anos`.)
+
+    if(idade < 16) {
+    console.log('Não vota')
+    } else if (idade < 18 || idade > 65){
+      console.log('Voto opcional!')
+    } else {
+        console.log('Voto obrigatório!')
+    } 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 O método  console.log()  serve para ESCREVER (log) uma MENSAGEM no console.
 
@@ -36,4 +47,26 @@ O método  console.log()  serve para ESCREVER (log) uma MENSAGEM no console.
         console.log('Você é estrangeiro!')
     }
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Pegar Hora atual do sistema (Node.js)
 
+    var agora = new Date()
+    var hora = agora.getHours() 
+    console.log(`agora são exatamente ${hora} hora(s)`)
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Expressão múltipla: (SWITCH CASE)
+
+    Ex:  switch (Expressão) {
+        case valor 1
+            x
+            break
+        case valor 2
+            x
+            break
+        case valor 3
+            x 
+            break
+        default
+            x
+            break
+    }
