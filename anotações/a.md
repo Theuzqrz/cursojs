@@ -1,18 +1,10 @@
 # Js anotações (curso guanabara)
 
-Alertas tipos (Dentro do script)
+ Alertas tipos (Dentro do script)
 
-    window.alert ('Alo')                                 // mensagem simples
-    window.confirm ('Alguma pergunta aleatória?')        // mensagem "ok" ou "cancelar"
-    window.prompt ('Qual é o seu nome?')                 // mensagem com uma caixa de texto
-    
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-Comentários(dentro de script)
-
-    //    comentário linha
-    /* 
-          comentário várias linhas
-    */      
+   * window.alert ('Alo')                                 // mensagem simples
+   * window.confirm ('Alguma pergunta aleatória?')        // mensagem "ok" ou "cancelar"
+   * window.prompt ('Qual é o seu nome?')                 // mensagem com uma caixa de texto
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Sinal de = significa "recebe" comentário!
@@ -29,11 +21,12 @@ Node.js
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Identificadores: (n1)
 
-    pode começar com letra, $ ou _ (e letras e números. ex: n1)
-    não pode começar com números
-    pode usar acentos e símbolos
-    não pode conter espaços
-    não podem ser palavras reservadas
+  * pode começar com letra, $ ou _ (e letras e números. ex: n1)
+
+  * não pode começar com números
+  * pode usar acentos e símbolos
+  * não pode conter espaços
+  * não podem ser palavras reservadas
 
 Dicas:
 
@@ -43,35 +36,16 @@ Dicas:
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Javascript tipos de dados 
 
-    number: 5, 18, -12, 0.5, -15.9, 3.14, 8.0
+   * number: 5, 18, -12, 0.5, -15.9, 3.14, 8.0
     {Infinity e NaN(not an number)}
-
-    string: "google", 'javascript', `maria`
-    
-    boolean: true, false
-
-
-    Outros: null, object(array) undefined, function
+   * string: "google", 'javascript' e `maria ${x}`
+   * boolean: true, false
+   * Outros: null, object(array) undefined, function
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-Nodejs typeof
-
-    >typeof [ ]
-    'object'
-
-    >typeof "google"
-    'string'
-
-    >typeof 3
-    'number'
-
-    >typeof funtion(){}
-    'function'
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-    Number.parseFloat(n) força uma string ser numero real
-    Number.parseInt(n) força uma string ser numero inteiro
-    Number(n) reconhece o tipo de numero colocado automaticamente
+   * Number.parseFloat(n) força uma string ser numero real
+   * Number.parseInt(n) força uma string ser numero inteiro
+   * Number(n) reconhece o tipo de numero colocado automaticamente
 
     Exemplo: 
 
@@ -81,12 +55,12 @@ Nodejs typeof
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Formatando String:
 
-    Template string: melhor pra fazer a concatenação
+   * Template string: melhor pra fazer a concatenação
 
     var idioma = 'portugues'
 
     'eu estou aprendendo' + idioma            // usa concatenação
-    `eu estou aprendendo ${idioma}`          // usa template string
+    `eu estou aprendendo ${idioma}`           // usa template string
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Conversão de letras
