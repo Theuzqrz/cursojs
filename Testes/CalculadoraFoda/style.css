@@ -4,19 +4,18 @@
 }
 
 body{
-    background-color: #252222;
-    color: #00ffff;
+    background-color: #31ae00ab;
+    color: #000000;
     font-family: cursive;
     font-size: 30px;
-    justify-content: center;
     text-align: center;
     margin-top: 2em;
 }
 
 input{
     border: solid 3px black;
-    padding: 15px 10px;
-    margin: 100px 10px;
+    padding: 9px 10px;
+    margin: 50px 15px;
     width: 200px;
     border-radius: 10px;
     font-family: cursive;
@@ -26,24 +25,17 @@ input{
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 10px;
+  margin: 10px;  
 }
 
 input:hover{
-    background-color: #00ffff;
+    background-color: #64a75c;
 }
 
-button:active{
-    background-color: #3e8e41;
+footer{
+    border: #1aff00;
+    margin: 20px;
 }
-
-
-        
-.button:active {
-          background-color: #3e8e41;
-          box-shadow: 0 5px #666;
-          transform: translateY(5px);
-        }
 
 div#res {
     margin-top: 20px;
