@@ -30,8 +30,8 @@ Identificadores: (n1)
 
 Dicas:
 
-    *Maiúsculas e minúsculas Fazem diferença
-    *Tente escolher nomes coerentes
+   * Maiúsculas e minúsculas Fazem diferença
+   * Tente escolher nomes coerentes
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Javascript tipos de dados 
@@ -65,36 +65,40 @@ Formatando String:
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Conversão de letras
 
-    var x = 'nOMe'
+  * var x = 'nOMe'
     document.write(`Olá, ${x}!`)                     >> Olá, nOMe! 
     document.write(`Olá, ${x.toUpperCase}()!`)       >> olá, NOME!
     document.write(`Olá, ${x.toLowerCase}()!`)       >> olá, nome!
 
 
-    var x = window.prompt('Digite uma frase.')
+  * var x = window.prompt('Digite uma frase.')
     document.write(`A frase possui ${x.length} letras.`)
     document.write(`${x}`)
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Formatar números no node:
     
-    > var n1 = 1545.5 
+    >var n1 = 1545.5 
     >n1
     1545.5
+
     (e se eu quiser com 2 casas decimais?) 
     >n1.tofixed(2)
     1545.50
+
     (e se eu quiser usar vírgula em lugar de ponto?)
     >n1.tofixed(2).replace('.', ',')
     1545,50
 
 IMPORTANTE:
 
-    >n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+  * >n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
     R$ 1,545.50
-    >n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+
+  * >n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
     US$ 1,545.50
-    >n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+   
+  * >n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
     € 1,545.50
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -106,27 +110,27 @@ Aritiméticos:
     5 /  2   =   2.5
     5 *  2   =   10
     5 ** 2   =   25          // 5 elevado a 2
-    5 %  2   =   1          // divisão resta 1
+    5 %  2   =   1           // 5 dividido pra 2 não é número inteiro então resta 1
 
     5+3/2 = 6.5 (divisão primeiro)
 
 Ordem de precedência: Importante
 
-    ()       >      **        >        *, /, %        >        +, -
+  * ()       >      **        >        *, /, %        >        +, - 
 
-    var a = 5 + 3                    > 8
-    var b = a % 5                    > 3
-    var c = 5 * ((b ** 2))           > 45
-    var d = 10 - ((a / 2))           > 6
-    var e = ((6 * 2)) / d            > 2
-    var f = ((b % e)) + ((4/e))      > 3
+    var a = 5 + 3                    >   8
+    var b = a % 5                    >   3
+    var c = 5 * ((b ** 2))           >   45
+    var d = 10 - ((a / 2))           >   6
+    var e = ((6 * 2)) / d            >   2
+    var f = ((b % e)) + ((4/e))      >   3
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Autoatribuição:
 
     var n =  3
-    n = n +  4
-    n = n -  5
+    n = n +  4     
+    n = n -  5 
     n = n *  4
     n = n /  2
     n = n ** 2
@@ -134,23 +138,27 @@ Autoatribuição:
 
 Forma de simplificar:
 
-    se N receber ele mesmo(N) mais 4:
+    Se N receber ele mesmo(N) mais(+) 4: 
     N = N + 4             >          N += 4 ou N++ = 4
 
-    se receber outra variável :
+    Se receber outra variável :
     (não pode simplificar)
 
     N + M(outra variável) + 4    // não simplifica
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Incremento:
-    > var num = 8
-    undefined
-    > num
+
+    >var num = 8
+    undefined 
+
+    >num
     8
-    > num += 2
+
+    >num += 2
     10
-    > num
+
+    >num
     10
 
     a variável muda e se atualiza.
@@ -158,13 +166,17 @@ Incremento:
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 Operadores de incremento:
 
-    var x = 5
+  * var x = 5
+
     x = x + 1    ou    x += 1     ou   x++   >       6
     x = x - 1    ou    x -= 1     ou   x--   >       5
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 Operadores(pt 2): Relacionais, Lógicos, Ternário
-Relacionais: (RESULTADO VALOR BOOLEANO)
+
+  * Relacionais: (RESULTADO VALOR BOOLEANO)
+
+    >, <, >=, <=, ==, !=, ===
 
     5 > 2       > true     (5 maior que 2?)
     7 < 4       > false    (7 menor que 4?)
@@ -173,14 +185,17 @@ Relacionais: (RESULTADO VALOR BOOLEANO)
     5 == 5      > true     (5 igual a 5?)
     4 != 4      > false    (4 diferente de 4?)
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-ATENÇÃO!!! IDENTIDADE.
+  * ATENÇÃO!!! IDENTIDADE.
 
-    5 == 5 > true
-    5 == '5' > true
+    5 == 5 > true            (5 é igual ao número 5? (visualmente sim))
+    5 == '5' > true          (5 é igual a string 5? (visualmente sim))
 
-    5 === '5'   > FALSE    (são indênticos? sim)
-    5 === 5     > TRUE     (são idênticos? sim)
+    5 === '5'   > FALSE    (são idênticos? ambos são números? não, são número e string)
+    5 === 5     > TRUE     (são idênticos? ambos são números? sim)
+
+  * ORDEM DE PRECEDÊNCIA:
+
+    quem vier/aparecer primeiro.
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 Lógicos:
@@ -217,20 +232,18 @@ Importante:
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 Revisão ordem de precedência: (descendo = v) 
 
-    Se tiver todos os operadores numa mesma expressão, resolve primeiramente:
+  * Se tiver todos os operadores numa mesma expressão, resolve primeiramente:
 
-  v  1. Operadores Aritiméticos      (), **, /, ...
-  v  2. Operadores Relacionais       >, <, >=, ... (LEMBRANDO QUE: entre os Relacionais, quem vier primeiro vai ser feito primeiro)
-  v  3. Operadores Lógicos           !
-  v                                  &&
-  v                                  ||    
+    v>  1. Operadores Aritiméticos      (), **, *, /, %, +, - 
+    v>  2. Operadores Relacionais       >, <, >=, <=, ==, !=, === (quem vier primeiro vai ser feito primeiro)
+    v>  3. Operadores Lógicos           !, &&, || (NESTA ORDEM)
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 Operadores Ternário:
 
     é "?" e ":" dentro de uma mesma expressão
 
-    TESTE ? TRUE : FALSE
+    TES * TE ? TRUE : FALSE
 
     -teste lógico qualquer- ? -vai acontecer se o teste for verdadeiro- : -vai acontecer se o teste for falso-
     -a média é >= 7.0- ? -aprovado- : -reprovado-
@@ -239,31 +252,38 @@ Nodejs
 
     > var média = 5.5
     undefined
+
     > média > 7?'aprovado':'reprovado'
     'reprovado'
+
     > média += 3
     8.5
+
     > média > 7?'aprovado':'reprovado'
     'aprovado'
 
     > var res = x % 2 == 0 ? 5 : 9 ((se x % 2 restar 0, ou seja, for número par, a variável res vai ser 5, caso não seja, vai ser 9))
     undefined
+
     > x 
     8
+
     > res
     5
 
     > var idade = 19
     undefined
+
     > var r = idade >= 18?'MAIOR' : 'MENOR'
     undefined
+    
     > r
     'MAIOR' 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 O que é DOM? (Aula 9)
    
-    DOM significa "Document Object Model"
+  * DOM significa "Document Object Model"
     conjunto de objetos de objetos dentro do nav que vai dar acesso 
     aos componentes internos do website.
 
@@ -301,12 +321,12 @@ meta, title, etc...           ....
 >   ex: (<)div name = "mensagem"(>) ALO (</)div(>)
         (<)div name = "mensagem"(>) ALO ALO (</)div(>)
 
-        var x = document.getElementsByTagName('mensagem')[0] << 0
+        var x = document.getElementsByTagName('mensagem')[0] << 0 = 1 div
         x.innerText = 'olá!'    
 
         > resultado: "ALO" se tornará "olá!"
-
-        var x = document.getElementsByTagName('mensagem')[1] << 1
+-----------------
+        var x = document.getElementsByTagName('mensagem')[1] << 1 = 2 div
         x.innerText = 'olá!'             
 
     > resultado: "ALO ALO" se tornará "olá!"
@@ -317,7 +337,7 @@ meta, title, etc...           ....
 
 >   ex: (<)div id= "mensagem"(>) ALO (</)div(>)
     
-        var x = document.getElementByID('mensagem')
+        var x = document.getElementByID('div#mensagem')
         x.innerText = 'olá!'
 
     > resultado: "ALO" se tornará "olá!"
@@ -339,7 +359,7 @@ meta, title, etc...           ....
 
 >   ex: (<)div class = "mensagem"(>) ALO (</)div(>)
         
-        var x = document.getElementsByClassName('mensagem')[0]
+        var x = document.getElementsByClassName('div.mensagem')[0]
         x.innerText = 'olá!'
 
     > resultado: "ALO" se tornará "olá!"
@@ -357,7 +377,7 @@ meta, title, etc...           ....
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 Eventos DOM: (Aula 10)
 
-    Primeiramente, funções são um conjunto de linhas/códigos que vão ser executadas caso o evento ocorra
+   * Funções são um conjunto de linhas/códigos que vão ser executadas caso o evento ocorra
     
     >function "ação"(parâmetros opcionais){
     >
@@ -366,7 +386,6 @@ Eventos DOM: (Aula 10)
     exemplos de alguns eventos com o mouse:
 
     onmouseenter, onmouseout, onmouseup, onmousedown, onclick,
-
     
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -381,7 +400,7 @@ são diferentes. html pega as tags, text pega apenas o texto
         div id="area" onclick="clicar()"
 
         function clicar{
-            var x = document.getElementByID('area')
+            var x = document.getElementByID('area') // dentro da área escolhida, o texto irar mudar pra "clicou"
             x.innerText = 'Clicou!' 
         }
 
@@ -393,14 +412,25 @@ são diferentes. html pega as tags, text pega apenas o texto
 
     x.addEventListener('click', clicar)
     x.addEventListener('mouseenter', entrar)
-    x.addEventListener('mouseout', sair)
+        
+    function clicar() {
+        x.innerText = 'Clicou!'
+        x.style.background = 'black'
+        x.style.color = 'green'
+    }
+
+    function entrar(){
+        x.innerText = 'Entrou!'
+        x.style.background = 'green'
+        x.style.color = 'black'
+    }
 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
 Estrutura condicional simples: IF 
 
-    Se (if) condição1 for VERDADEIRA, execute o Bloco A.
+  * Se (if) condição1 for VERDADEIRA, execute o Bloco A.
 
     Ilustração:
     if (condição1) {
@@ -411,7 +441,7 @@ Estrutura condicional simples: IF
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 Estrutura condicional composta: IF/ELSE 
 
-    Se (if) condição1 for VERDADEIRA, execute o Bloco A.
+  * Se (if) condição1 for VERDADEIRA, execute o Bloco A.
     Senão (else), execute o Bloco B.
 
     Ilustração:
@@ -421,7 +451,7 @@ Estrutura condicional composta: IF/ELSE
     Bloco B
     }
 
-    Se condição1 for TRUE, execute o bloco TRUE (Bloco A).
+  * Se condição1 for TRUE, execute o bloco TRUE (Bloco A).
     Senão for TRUE, execute o bloco FALSE (Bloco B).
     
     var idade = 22
