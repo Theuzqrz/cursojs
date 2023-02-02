@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="burro.ico" type="image/x-icon">
+
     <title> Age verifier </title>
 </head>
 <body>
@@ -16,11 +18,12 @@
             <p> Ano de nascimento:
             <input type="number" name="txtano" id="txtano" min="0">
             </p>
-            <p> Sexo:  
-                <input type="radio" name="radsex" id="masc" checked>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masculino" checked> 
                 <label for="masc">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
+            
+                <input type="radio" name="radsex" id="feminino">
+                <label for="femi">Feminino</label>
             </p>
             <p>
                 <input type="button" value="Verificar" onclick="verificar()">
