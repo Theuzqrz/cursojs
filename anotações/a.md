@@ -501,3 +501,36 @@ Expressão múltipla: (SWITCH CASE)
             break
     }
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+    Estruturas de Repetição:
+
+  * while:
+    ex: 
+    
+    var c = 1
+    while (c <= 3) {
+    console.log(`Passo ${c}`)
+    c++
+    } 
+    > Passo 1, Passo 2, Passo 3
+
+
+  * Do While:
+    ex:
+
+    var c = 1
+    do{
+    console.log(`Passo ${c}`)
+    c++
+    } while (c <= 3)
+    > Passo 1, Passo 2, Passo 3
+
+
+  * For:
+    ex:
+
+    for(var c = 1; c <= 3; c++) {
+    console.log(`Passo ${c}`)
+    }
+    > Passo 1, Passo 2, Passo 3
+
+
