@@ -5,17 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Exercício 3</title>
 </head>
 <body>
     <header>
-        alo
+        <h1>Lets count</h1>
     </header>
     <section>
-        <div class="center">
-            alo
+        <div class="inicio">
+            Início:
+            <input type="number" name="number1" id="number1">
         </div>
-        <div>alo</div>
+        <div class="fim">
+            Fim:
+            <input type="number" name="number2" id="number2">
+        </div>
+        <div class="passo">
+            Passo(s):
+            <input type="number" name="passo" id="passo">
+        </div>
+
+        <input type="button" value="contar" onclick="contar()">
+        
+        <div id="cont">
+            <p>Preparando a contagem...</p>
+        </div>
     </section>
     <footer>
         <p>&copy; CursoEmVideo </p>
