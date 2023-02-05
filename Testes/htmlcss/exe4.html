@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/burro.ico" type="image/x-icon">
+    <title>Áudio</title>
+    <style>
+        *{
+            font-family: 'Segoe UI';
+            text-decoration: none;
+        }
+        
+        footer{
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <h1>reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir áudios em html.</p>
+    <audio src="audios/ana-sus.mp3" controls></audio>
+    <!-- a forma acima é uma forma simples que pode não funcionar em alguns navegadores, é melhor utilizar o código da forma a seguir. 
+        
+    <audio> -- controls, autoplay, loop...... --
+        <source src="audios/ana-sus.mp3" type="audio/mpeg">
+        <source src="audios/ana-sus.ogg" type="audio/ogg">
+        <source src="audios/ana-sus.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir o áudio... <a href="audios/ana-sus.mp3"> clique aqui para baixar o arquivo mp3</a></p>
+    </audio> -->
+
+    <footer>
+        <a href="exe3.html" rel="prev" target="_self"><abbr title="Página3">Página anterior |</abbr></a>
+        <a href="exe5.html" rel="next" target="_self"><abbr title="Página5">| Próxima página</abbr></a>
+    </footer>
+</body>
+</html>
