@@ -11,15 +11,25 @@
             text-decoration: none;
         }
 
+        body{
+            color: #191919;
+            background-color: #ff000076;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
         footer{
-            text-align: end;
+            display: flex;
+            justify-content: space-between;       
         }
     </style>
 </head>
 <body>
     <h1>Tags em HTML</h1>
-    <p>Em HTML5, podemos inserir os elemontos da lista a seguir.</p>
-    <strong>Passe o mouse</strong> sobre os termos para descobrir qual tag deverá utilizar em cada caso!
+    <p>Em HTML5, podemos inserir os elemontos da lista a seguir. <br>
+    <strong>Passe o mouse</strong> sobre os termos para descobrir qual tag deverá utilizar em cada caso!</p>
     <ul type="circle">
         <li><abbr title="Use a tag &lt p >">Parágrafos</abbr>
         <li><abbr title="Use a tag &lt h1 > ... &lt h6 >">Títulos</abbr>
@@ -30,8 +40,10 @@
         <li><abbr title="Use a tag &lt ul > e &lt li >">Listas com demarcadores</abbr>
     </ul>
     <footer>
-        <a href="exe1.html" rel="prev" target="_self"><abbr title="Página1">Página anterior |</abbr></a>
-        <a href="exe3.html" rel="next" target="_self"><abbr title="Página3">| Próxima página</abbr></a>
+
+        <a href="exe1.html" rel="prev" target="_self"><abbr title="Página1"><img src="imgs/arrow_back_FILL0_wght400_GRAD0_opsz48.png" alt="página anterior"></abbr></a>
+        <a href="exe3.html" rel="next" target="_self"><abbr title="Página3"><img src="imgs/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.png" alt="próxima página"></abbr></a>
+
     </footer>
 </body>
 </html>
